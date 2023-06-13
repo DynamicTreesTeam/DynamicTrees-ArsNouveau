@@ -34,8 +34,6 @@ public class DynamicTreesArsNouveau {
 //        }
 
         RegistryHandler.setup(MOD_ID);
-
-        DTArsNouveauRegistries.SOUNDS.register(modEventBus);
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {

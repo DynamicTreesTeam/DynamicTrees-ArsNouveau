@@ -3,14 +3,17 @@
   "block.dtarsnouveau.green_archwood_branch":"Archwood",
   "block.dtarsnouveau.purple_archwood_branch":"Archwood",
   "block.dtarsnouveau.red_archwood_branch":"Archwood",
+  "block.dtarsnouveau.yellow_archwood_branch":"Archwood",
 
-  "species.dtarsnouveau.blue_archwood":"Blue Archwood",
-  "species.dtarsnouveau.green_archwood":"Green Archwood",
-  "species.dtarsnouveau.purple_archwood":"Purple Archwood",
-  "species.dtarsnouveau.red_archwood":"Red Archwood",
+  "species.dtarsnouveau.blue_archwood":"Cascading Archwood",
+  "species.dtarsnouveau.green_archwood":"Flourishing Archwood",
+  "species.dtarsnouveau.purple_archwood":"Vexing Archwood",
+  "species.dtarsnouveau.red_archwood":"Blazing Archwood",
+  "species.dtarsnouveau.yellow_archwood":"Flashing Archwood",
 
-  "item.dtarsnouveau.blue_archwood_seed":"Blue Archwood Pod",
-  "item.dtarsnouveau.green_archwood_seed":"Green Archwood Pod",
-  "item.dtarsnouveau.purple_archwood_seed":"Purple Archwood Pod",
-  "item.dtarsnouveau.red_archwood_seed":"Red Archwood Pod"
+  "item.dtarsnouveau.blue_archwood_seed":"Cascading Archwood Pod",
+  "item.dtarsnouveau.green_archwood_seed":"Flourishing Archwood Pod",
+  "item.dtarsnouveau.purple_archwood_seed":"Vexing Archwood Pod",
+  "item.dtarsnouveau.red_archwood_seed":"Blazing Archwood Pod",
+  "item.dtarsnouveau.yellow_archwood_seed":"Flashing Archwood Pod"
 }

@@ -1,0 +1,9 @@
+{
+  "only_if_loaded": "ars_elemental",
+  "common_leaves": "dtarsnouveau:yellow_archwood",
+  "common_species": "dtarsnouveau:yellow_archwood",
+  "primitive_log": "ars_elemental:yellow_archwood_log",
+  "primitive_stripped_log": "ars_elemental:stripped_yellow_archwood_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true
+}

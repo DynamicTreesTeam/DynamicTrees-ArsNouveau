@@ -10,7 +10,7 @@
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:green_archwood",
   "perfect_biomes": { "type": "magical" },
-  "primitive_sapling": "green_archwood_sapling",
+  "primitive_sapling": "ars_nouveau:green_archwood_sapling",
   "features" : [
     {
       "name": "clear_volume",

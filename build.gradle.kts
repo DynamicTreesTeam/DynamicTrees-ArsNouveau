@@ -29,6 +29,9 @@ repositories {
     maven("https://harleyoconnor.com/maven")
     maven("https://squiddev.cc/maven/")
     mavenLocal()
+    flatDir {
+        dirs("libs")
+    }
 }
 
 val modName = property("modName")
@@ -90,7 +93,8 @@ dependencies {
     implementation(fg.deobf("curse.maven:ars-nouveau-401955:4543053"))
     implementation(fg.deobf("curse.maven:curios-309927:4418032"))
     //optional implementation
-    implementation(fg.deobf("curse.maven:curios-309927:4418032"))
+    //implementation(fg.deobf("curse.maven:ars-elemental-561470:4353741"))
+    //implementation(fg.deobf("lib:ars_elemental-1.18.2:0.4.9.9"))
 
     runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
@@ -143,6 +147,7 @@ curseforge {
                 relations {
                     requiredDependency("dynamictrees")
                     requiredDependency("ars-nouveau")
+                    optionalDependency("ars-elemental")
                 }
             }
         }

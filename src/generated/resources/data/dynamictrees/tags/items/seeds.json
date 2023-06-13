@@ -4,6 +4,10 @@
     "dtarsnouveau:blue_archwood_seed",
     "dtarsnouveau:green_archwood_seed",
     "dtarsnouveau:purple_archwood_seed",
-    "dtarsnouveau:red_archwood_seed"
+    "dtarsnouveau:red_archwood_seed",
+    {
+      "id": "dtarsnouveau:yellow_archwood_seed",
+      "required": false
+    }
   ]
 }

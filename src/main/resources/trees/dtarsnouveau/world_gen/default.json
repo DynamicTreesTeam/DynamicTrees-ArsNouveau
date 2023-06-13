@@ -1,6 +1,6 @@
 [
   {
-    "select": { "categories" : [ "forest" ], "type": "overworld" },
+    "select": { "types": [ "forest", "overworld" ] },
     "apply": {
       "species" : {
         "method" : "splice_before",
@@ -9,7 +9,21 @@
           "dtarsnouveau:green_archwood" : 1,
           "dtarsnouveau:purple_archwood" : 1,
           "dtarsnouveau:red_archwood" : 1,
-          "..." : 400
+          "..." : 4000
+        }
+      }
+    }
+  },
+
+  {
+    "only_if_loaded": "ars_elemental",
+    "select": { "types": [ "forest", "overworld" ] },
+    "apply": {
+      "species" : {
+        "method" : "splice_before",
+        "random" : {
+          "dtarsnouveau:yellow_archwood" : 1,
+          "..." : 1000
         }
       }
     }

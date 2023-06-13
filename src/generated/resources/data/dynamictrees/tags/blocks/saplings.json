@@ -4,6 +4,10 @@
     "dtarsnouveau:blue_archwood_sapling",
     "dtarsnouveau:green_archwood_sapling",
     "dtarsnouveau:purple_archwood_sapling",
-    "dtarsnouveau:red_archwood_sapling"
+    "dtarsnouveau:red_archwood_sapling",
+    {
+      "id": "dtarsnouveau:yellow_archwood_sapling",
+      "required": false
+    }
   ]
 }

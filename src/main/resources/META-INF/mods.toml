@@ -54,7 +54,7 @@ Compatibility Mod between Dynamic trees and Ars Nouveau
 [[dependencies.dtarsnouveau]]
     modId="ars_elemental"
     mandatory=false
-    versionRange="[0.4.9.9,0.5.0.0)"
+    versionRange="[1.18.2-0.4.9.9,1.19.0-0.5.0.0)"
     ordering="AFTER"
     side="BOTH"
 

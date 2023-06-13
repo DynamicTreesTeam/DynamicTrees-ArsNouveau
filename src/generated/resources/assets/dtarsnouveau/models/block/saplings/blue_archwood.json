@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/sapling",
+  "textures": {
+    "particle": "ars_nouveau:blocks/blue_archwood_leaves",
+    "log": "ars_nouveau:blocks/blue_archwood_log",
+    "leaves": "ars_nouveau:blocks/blue_archwood_leaves"
+  }
+}

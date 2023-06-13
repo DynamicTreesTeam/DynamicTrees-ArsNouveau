@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "ars_nouveau:blocks/red_archwood_log",
+    "rings": "ars_nouveau:blocks/red_archwood_log_top"
+  }
+}

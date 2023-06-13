@@ -1,17 +1,16 @@
 {
-  "block.dtecologics.walnut_branch":"Walnut Tree",
-  "block.dtecologics.azalea_branch":"Azalea Tree",
-  "block.dtecologics.coconut_branch":"Palm Tree",
-  "block.dtecologics.prickly_pear_cactus":"Prickly Pear Cactus",
+  "block.dtarsnouveau.blue_archwood_branch":"Archwood",
+  "block.dtarsnouveau.green_archwood_branch":"Archwood",
+  "block.dtarsnouveau.purple_archwood_branch":"Archwood",
+  "block.dtarsnouveau.red_archwood_branch":"Archwood",
 
-  "species.dtecologics.walnut":"Walnut",
-  "species.dtecologics.coconut":"Coconut Palm",
-  "species.dtecologics.prickly_pear_cactus":"Prickly Pear Cactus",
+  "species.dtarsnouveau.blue_archwood":"Blue Archwood",
+  "species.dtarsnouveau.green_archwood":"Green Archwood",
+  "species.dtarsnouveau.purple_archwood":"Purple Archwood",
+  "species.dtarsnouveau.red_archwood":"Red Archwood",
 
-  "item.dtecologics.walnut_seed":"Germinated Walnut",
-  "item.dtecologics.coconut_seed":"Coconut",
-  "item.dtecologics.prickly_pear_cactus_seed":"Prickly Pear Seeds",
-
-  "subtitle.dtecologics.falling_fruit.bonk": "Player bonked by fruit",
-  "death.attack.dtecologics.falling_fruit.coconut": "%1$s was bonked in the head by a falling Coconut"
+  "item.dtarsnouveau.blue_archwood_seed":"Blue Archwood Pod",
+  "item.dtarsnouveau.green_archwood_seed":"Green Archwood Pod",
+  "item.dtarsnouveau.purple_archwood_seed":"Purple Archwood Pod",
+  "item.dtarsnouveau.red_archwood_seed":"Red Archwood Pod"
 }

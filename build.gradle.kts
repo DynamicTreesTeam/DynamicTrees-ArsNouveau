@@ -89,8 +89,10 @@ dependencies {
     implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
     implementation(fg.deobf("curse.maven:ars-nouveau-401955:4543053"))
     implementation(fg.deobf("curse.maven:curios-309927:4418032"))
+    //optional implementation
+    implementation(fg.deobf("curse.maven:curios-309927:4418032"))
 
-    implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
+    runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
     runtimeOnly(fg.deobf("curse.maven:jade-324717:3970956"))
     runtimeOnly(fg.deobf("mezz.jei:jei-$mcVersion:${property("jeiVersion")}"))

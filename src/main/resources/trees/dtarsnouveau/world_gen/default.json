@@ -1,0 +1,17 @@
+[
+  {
+    "select": { "categories" : [ "forest" ], "type": "overworld" },
+    "apply": {
+      "species" : {
+        "method" : "splice_before",
+        "random" : {
+          "dtarsnouveau:blue_archwood" : 1,
+          "dtarsnouveau:green_archwood" : 1,
+          "dtarsnouveau:purple_archwood" : 1,
+          "dtarsnouveau:red_archwood" : 1,
+          "..." : 400
+        }
+      }
+    }
+  }
+]

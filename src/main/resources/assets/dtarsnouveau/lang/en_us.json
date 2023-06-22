@@ -1,9 +1,9 @@
 {
-  "block.dtarsnouveau.blue_archwood_branch":"Archwood",
-  "block.dtarsnouveau.green_archwood_branch":"Archwood",
-  "block.dtarsnouveau.purple_archwood_branch":"Archwood",
-  "block.dtarsnouveau.red_archwood_branch":"Archwood",
-  "block.dtarsnouveau.yellow_archwood_branch":"Archwood",
+  "block.dtarsnouveau.blue_archwood_branch":"Archwood Tree",
+  "block.dtarsnouveau.green_archwood_branch":"Archwood Tree",
+  "block.dtarsnouveau.purple_archwood_branch":"Archwood Tree",
+  "block.dtarsnouveau.red_archwood_branch":"Archwood Tree",
+  "block.dtarsnouveau.yellow_archwood_branch":"Archwood Tree",
 
   "species.dtarsnouveau.blue_archwood":"Cascading Archwood",
   "species.dtarsnouveau.green_archwood":"Flourishing Archwood",

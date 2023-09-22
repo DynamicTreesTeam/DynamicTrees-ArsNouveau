@@ -1,0 +1,19 @@
+{
+  "name": "Archwood Trees",
+  "icon": "dtarsnouveau:blue_archwood_seed",
+  "category": "dynamictrees:trees",
+  "sortnum": 6,
+  "pages": [
+	{
+      "type": "text",
+      "title": "Archwood Trees",
+      "text": "Archwood trees are magical flora that sparsely populates the overworld. Look around to "
+    },
+    {
+      "type": "image",
+      "images": ["dtarsnouveau:textures/patchouli/images/archwood_1.png","dtarsnouveau:textures/patchouli/images/archwood_2.png", "dtarsnouveau:textures/patchouli/images/archwood_3.png"],
+      "text": "Examples of archwood trees",
+      "border": true
+    }
+  ]
+} 

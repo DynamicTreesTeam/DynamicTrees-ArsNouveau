@@ -7,6 +7,7 @@ import java.time.Instant
 import java.time.format.DateTimeFormatter
 
 fun property(key: String) = project.findProperty(key).toString()
+fun optionalProperty(key: String) = project.findProperty(key)?.toString()
 
 apply(from = "https://gist.githubusercontent.com/Harleyoc1/4d23d4e991e868d98d548ac55832381e/raw/applesiliconfg.gradle")
 
@@ -17,6 +18,8 @@ plugins {
     id("idea")
     id("maven-publish")
     id("com.matthewprenger.cursegradle") version "1.4.0"
+    id("com.modrinth.minotaur") version "2.+"
+    id("com.harleyoconnor.autoupdatetool") version "1.0.7"
 }
 
 repositories {
@@ -29,23 +32,19 @@ repositories {
     maven("https://harleyoconnor.com/maven")
     maven("https://squiddev.cc/maven/")
     mavenLocal()
-    flatDir {
-        dirs("libs")
-    }
 }
 
 val modName = property("modName")
 val modId = property("modId")
 val modVersion = property("modVersion")
 val mcVersion = property("mcVersion")
+val dtVersion = property("dynamicTreesVersion")
 
 version = "$mcVersion-$modVersion"
 group = property("group")
 
 minecraft {
     mappings("parchment", "${property("mappingsVersion")}-$mcVersion")
-
-    accessTransformer(file("src/main/resources/META-INF/accesstransformer.cfg"))
 
     runs {
         create("client") {
@@ -75,8 +74,8 @@ minecraft {
                 "--output", file("src/generated/resources/"),
                 "--existing", file("src/main/resources"),
                 "--existing-mod", "dynamictrees",
-                "--existing-mod", "dynamictreesplus",
-                "--existing-mod", "ars_nouveau"
+                "--existing-mod", "quark",
+                "--existing-mod", "dynamictreesplus"
             )
         }
     }
@@ -89,19 +88,18 @@ sourceSets.main.get().resources {
 dependencies {
     minecraft("net.minecraftforge:forge:$mcVersion-${property("forgeVersion")}")
 
-    implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
-    implementation(fg.deobf("curse.maven:ars-nouveau-401955:4543053"))
-    implementation(fg.deobf("curse.maven:curios-309927:4418032"))
-    //optional implementation
-    //implementation(fg.deobf("curse.maven:ars-elemental-561470:4353741"))
-    //implementation(fg.deobf("lib:ars_elemental-1.18.2:0.4.9.9"))
+    implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:$dtVersion"))
 
-    runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
+    implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
-    runtimeOnly(fg.deobf("curse.maven:jade-324717:3970956"))
-    runtimeOnly(fg.deobf("mezz.jei:jei-$mcVersion:${property("jeiVersion")}"))
+    implementation(fg.deobf("curse.maven:ars-nouveau-401955:4712382"))
+    implementation(fg.deobf("curse.maven:ars-elemental-561470:4758196"))
+    implementation(fg.deobf("curse.maven:curios-309927:4523009"))
+
+    runtimeOnly(fg.deobf("curse.maven:jade-324717:4433884"))
+    runtimeOnly(fg.deobf("curse.maven:jei-238222:4615177"))
     runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))
-    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.18.1:${property("suggestionProviderFixVersion")}"))
+    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.19:${property("suggestionProviderFixVersion")}"))
     runtimeOnly(fg.deobf("vazkii.patchouli:Patchouli:${property("patchouliVersion")}"))
 }
 
@@ -128,31 +126,54 @@ java {
     }
 }
 
+val changelogFile = file("build/changelog.txt")
+
 curseforge {
-    if (project.hasProperty("curseApiKey") && project.hasProperty("curseFileType")) {
-        apiKey = property("curseApiKey")
+    if (!project.hasProperty("curseApiKey")) {
+        project.logger.warn("API Key for CurseForge not detected; uploading will be disabled.")
+        return@curseforge
+    }
 
-        project {
-            id = property("curseProjectId")
+    apiKey = property("curseApiKey")
 
-            addGameVersion(mcVersion)
+    project {
+        id = "874028"
 
-            changelog = file("build/changelog.txt")
-            changelogType = "markdown"
-            releaseType = property("curseFileType")
+        addGameVersion(mcVersion)
 
-            addArtifact(tasks.findByName("sourcesJar"))
+        changelog = changelogFile
+        changelogType = "markdown"
+        releaseType = optionalProperty("versionType") ?: "release"
 
-            mainArtifact(tasks.findByName("jar")) {
-                relations {
-                    requiredDependency("dynamictrees")
-                    requiredDependency("ars-nouveau")
-                    optionalDependency("ars-elemental")
-                }
+        addArtifact(tasks.findByName("sourcesJar"))
+
+        mainArtifact(tasks.findByName("jar")) {
+            relations {
+                requiredDependency("dynamictrees")
+                requiredDependency("ars_nouveau")
             }
         }
-    } else {
-        project.logger.log(LogLevel.WARN, "API Key and file type for CurseForge not detected; uploading will be disabled.")
+    }
+}
+
+modrinth {
+    if (!project.hasProperty("modrinthToken")) {
+        project.logger.warn("Token for Modrinth not detected; uploading will be disabled.")
+        return@modrinth
+    }
+
+    token.set(property("modrinthToken"))
+    projectId.set("dynamic-trees-quark")
+    versionNumber.set("$mcVersion-$modVersion")
+    versionType.set(optionalProperty("versionType") ?: "release")
+    uploadFile.set(tasks.jar.get())
+    gameVersions.add(mcVersion)
+    if (changelogFile.exists()) {
+        changelog.set(changelogFile.readText())
+    }
+    dependencies {
+        required.version("vdjF5PL5", "$mcVersion-$dtVersion")
+        required.version("qnQsVE2z", "$mcVersion-3.4-405")
     }
 }
 
@@ -169,6 +190,18 @@ publishing {
     repositories {
         maven("file:///${project.projectDir}/mcmodsrepo")
     }
+}
+
+autoUpdateTool {
+    minecraftVersion.set(mcVersion)
+    version.set(modVersion)
+    versionRecommended.set(property("versionRecommended") == "true")
+    changelogOutputFile.set(changelogFile)
+    updateCheckerFile.set(file(property("dynamictrees.version_info_repo.path") + File.separatorChar + property("updateCheckerPath")))
+}
+
+tasks.autoUpdate {
+    finalizedBy("curseforge", "modrinth")
 }
 
 fun RunConfig.applyDefaultConfiguration(runDirectory: String = "run") {

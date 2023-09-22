@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "DTArsNouveau",
-        "pack_format": 8
+        "description": "Datapack of Dynamic Trees for Ars Nouveau",
+        "pack_format": 10
     }
 }

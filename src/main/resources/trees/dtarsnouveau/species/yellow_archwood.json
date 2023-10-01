@@ -12,7 +12,19 @@
   "leaves_properties": "dtarsnouveau:yellow_archwood",
   "perfect_biomes": { "type": "magical" },
   "primitive_sapling": "ars_elemental:yellow_archwood_sapling",
+  "pods": [
+    "dtarsnouveau:flashpine"
+  ],
   "features" : [
+    {
+      "name": "pod",
+      "properties": {
+        "pod": "dtarsnouveau:flashpine",
+        "fruiting_radius": 8,
+        "blocks_per_pod": 16,
+        "lowest_trunk_height": 2
+      }
+    },
     {
       "name": "clear_volume",
       "properties": {

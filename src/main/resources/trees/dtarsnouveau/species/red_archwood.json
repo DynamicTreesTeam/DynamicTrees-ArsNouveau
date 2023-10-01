@@ -11,7 +11,19 @@
   "leaves_properties": "dtarsnouveau:red_archwood",
   "perfect_biomes": { "type": "magical" },
   "primitive_sapling": "ars_nouveau:red_archwood_sapling",
+  "pods": [
+    "dtarsnouveau:bombegranate"
+  ],
   "features" : [
+    {
+      "name": "pod",
+      "properties": {
+        "pod": "dtarsnouveau:bombegranate",
+        "fruiting_radius": 8,
+        "blocks_per_pod": 16,
+        "lowest_trunk_height": 2
+      }
+    },
     {
       "name": "clear_volume",
       "properties": {

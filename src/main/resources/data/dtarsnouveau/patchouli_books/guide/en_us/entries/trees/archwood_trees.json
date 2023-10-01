@@ -7,7 +7,7 @@
 	{
       "type": "text",
       "title": "Archwood Trees",
-      "text": "Archwood trees are magical flora that can be rarely found in forests. Look around to find all variants of Archwood trees: Cascading Archwood, Flourising Archwood, Vexing Archwood and Blazing Archwood.\nIf you are lucky you might find an entire Archwood Forest!\n\nIf the Ars Elemental addon is installed you will also find Flashing Archwood Trees and Flashing Forest biomes. "
+      "text": "Archwood trees are magical flora that can be rarely found in forests.$(br)If you are lucky you might find an entire Archwood Forest!$(br)$(br)If the Ars Elemental addon is installed you will also find Flashing Archwood Trees and more biomes."
     },
     {
       "type": "image",

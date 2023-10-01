@@ -11,7 +11,19 @@
   "leaves_properties": "dtarsnouveau:blue_archwood",
   "perfect_biomes": { "type": "magical" },
   "primitive_sapling": "ars_nouveau:blue_archwood_sapling",
+  "pods": [
+    "dtarsnouveau:frostaya"
+  ],
   "features" : [
+    {
+      "name": "pod",
+      "properties": {
+        "pod": "dtarsnouveau:frostaya",
+        "fruiting_radius": 8,
+        "blocks_per_pod": 16,
+        "lowest_trunk_height": 2
+      }
+    },
     {
       "name": "clear_volume",
       "properties": {

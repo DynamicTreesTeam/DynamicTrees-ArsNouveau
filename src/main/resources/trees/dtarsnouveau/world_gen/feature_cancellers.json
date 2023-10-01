@@ -1,0 +1,41 @@
+[
+  {
+    "select": "ars_nouveau:archwood_forest",
+    "cancellers": {
+      "type": "tree",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "only_if_loaded": "ars_elemental",
+    "select": "ars_elemental:blazing_forest",
+    "cancellers": {
+      "type": "tree",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "only_if_loaded": "ars_elemental",
+    "select": "ars_elemental:cascading_forest",
+    "cancellers": {
+      "type": "tree",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "only_if_loaded": "ars_elemental",
+    "select": "ars_elemental:flashing_forest",
+    "cancellers": {
+      "type": "tree",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "only_if_loaded": "ars_elemental",
+    "select": "ars_elemental:flourishing_forest",
+    "cancellers": {
+      "type": "tree",
+      "namespace": "minecraft"
+    }
+  }
+]

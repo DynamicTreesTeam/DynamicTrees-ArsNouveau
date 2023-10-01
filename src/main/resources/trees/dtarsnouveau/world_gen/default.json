@@ -1,6 +1,6 @@
 [
   {
-    "select": { "types": [ "forest", "overworld" ] },
+    "select": { "tag": "#minecraft:is_forest" },
     "apply": {
       "species" : {
         "method" : "splice_before",
@@ -9,7 +9,36 @@
           "dtarsnouveau:green_archwood" : 1,
           "dtarsnouveau:purple_archwood" : 1,
           "dtarsnouveau:red_archwood" : 1,
-          "..." : 4000
+          "..." : 3996
+        }
+      }
+    }
+  },
+  {
+    "select": "ars_nouveau:archwood_forest",
+    "apply": {
+      "species": {
+        "random": {
+          "oak": 1,
+          "dtarsnouveau:blue_archwood" : 1,
+          "dtarsnouveau:green_archwood" : 1,
+          "dtarsnouveau:purple_archwood" : 1,
+          "dtarsnouveau:red_archwood" : 1
+        }
+      },
+      "density": [ 0.6 ],
+      "chance": 0.8
+    }
+  },
+  {
+    "only_if_loaded": "ars_elemental",
+    "select": "ars_nouveau:archwood_forest",
+    "apply": {
+      "species" : {
+        "method" : "splice_before",
+        "random" : {
+          "dtarsnouveau:yellow_archwood" : 1,
+          "..." : 5
         }
       }
     }
@@ -17,15 +46,48 @@
 
   {
     "only_if_loaded": "ars_elemental",
-    "select": { "types": [ "forest", "overworld" ] },
+    "select": { "tag": "#minecraft:is_forest" },
     "apply": {
       "species" : {
         "method" : "splice_before",
         "random" : {
           "dtarsnouveau:yellow_archwood" : 1,
-          "..." : 1000
+          "..." : 3999
         }
       }
+    }
+  },
+
+  {
+    "select": "ars_elemental:blazing_forest",
+    "apply": {
+      "species": "dtarsnouveau:red_archwood",
+      "density": [ 0.6 ],
+      "chance": 0.8
+    }
+  },
+  {
+    "select": "ars_elemental:cascading_forest",
+    "apply": {
+      "species": "dtarsnouveau:blue_archwood",
+      "density": [ 0.6 ],
+      "chance": 0.8
+    }
+  },
+  {
+    "select": "ars_elemental:flashing_forest",
+    "apply": {
+      "species": "dtarsnouveau:yellow_archwood",
+      "density": [ 0.6 ],
+      "chance": 0.8
+    }
+  },
+  {
+    "select": "ars_elemental:flourishing_forest",
+    "apply": {
+      "species": "dtarsnouveau:green_archwood",
+      "density": [ 0.6 ],
+      "chance": 0.8
     }
   }
 ]

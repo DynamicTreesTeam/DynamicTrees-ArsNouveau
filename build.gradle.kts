@@ -74,7 +74,8 @@ minecraft {
                 "--output", file("src/generated/resources/"),
                 "--existing", file("src/main/resources"),
                 "--existing-mod", "dynamictrees",
-                "--existing-mod", "quark",
+                "--existing-mod", "ars_nouveau",
+                "--existing-mod", "ars_elemental",
                 "--existing-mod", "dynamictreesplus"
             )
         }

@@ -9,7 +9,7 @@
           "dtarsnouveau:green_archwood" : 1,
           "dtarsnouveau:purple_archwood" : 1,
           "dtarsnouveau:red_archwood" : 1,
-          "..." : 1996
+          "..." : 2996
         }
       }
     }
@@ -52,7 +52,7 @@
         "method" : "splice_before",
         "random" : {
           "dtarsnouveau:yellow_archwood" : 1,
-          "..." : 1999
+          "..." : 2999
         }
       }
     }

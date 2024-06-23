@@ -9,7 +9,7 @@
           "dtarsnouveau:green_archwood" : 1,
           "dtarsnouveau:purple_archwood" : 1,
           "dtarsnouveau:red_archwood" : 1,
-          "..." : 3996
+          "..." : 1996
         }
       }
     }
@@ -52,13 +52,14 @@
         "method" : "splice_before",
         "random" : {
           "dtarsnouveau:yellow_archwood" : 1,
-          "..." : 3999
+          "..." : 1999
         }
       }
     }
   },
 
   {
+    "only_if_loaded": "ars_elemental",
     "select": "ars_elemental:blazing_forest",
     "apply": {
       "species": "dtarsnouveau:red_archwood",
@@ -67,6 +68,7 @@
     }
   },
   {
+    "only_if_loaded": "ars_elemental",
     "select": "ars_elemental:cascading_forest",
     "apply": {
       "species": "dtarsnouveau:blue_archwood",
@@ -75,6 +77,7 @@
     }
   },
   {
+    "only_if_loaded": "ars_elemental",
     "select": "ars_elemental:flashing_forest",
     "apply": {
       "species": "dtarsnouveau:yellow_archwood",
@@ -83,6 +86,7 @@
     }
   },
   {
+    "only_if_loaded": "ars_elemental",
     "select": "ars_elemental:flourishing_forest",
     "apply": {
       "species": "dtarsnouveau:green_archwood",

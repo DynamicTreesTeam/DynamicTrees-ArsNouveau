@@ -11,7 +11,15 @@
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:yellow_archwood",
   "perfect_biomes": { "tag": "#forge:is_magical" },
-  "primitive_sapling": "ars_elemental:yellow_archwood_sapling",
+  "primitive_saplings": [
+    { "sapling_block": "ars_elemental:yellow_archwood_sapling"},
+    {
+      "sapling_item": "ars_elemental:flashpine_pod",
+      "can_craft_seed_to_sapling": false
+    }
+  ],
+  "seasonal_fruiting_offset": null,
+  "inherit_fruiting_offset_to_fruits": true,
   "pods": [
     "dtarsnouveau:flashpine"
   ],

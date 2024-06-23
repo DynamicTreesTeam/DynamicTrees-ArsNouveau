@@ -1,0 +1,6 @@
+{
+	"parent": "dtarsnouveau:block/pods/generic/round_age1_radius15",
+	"textures": {
+		"fruit": "dtarsnouveau:block/bombegranate"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "dtarsnouveau:block/bastion",
+		"fruit": "dtarsnouveau:block/bastion"
+	},
+	"elements": [
+		{
+			"from": [6, 7.2, 4.8],
+			"to": [10, 12, 8.8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.4, 12]},
+			"faces": {
+				"north": {"uv": [5, 3, 7.5, 6], "texture": "#fruit"},
+				"east": {"uv": [5, 3, 7.5, 6], "texture": "#fruit"},
+				"south": {"uv": [5, 3, 7.5, 6], "texture": "#fruit"},
+				"west": {"uv": [5, 3, 7.5, 6], "texture": "#fruit"},
+				"up": {"uv": [5, 0, 7.5, 2.5], "rotation": 180, "texture": "#fruit"},
+				"down": {"uv": [5, 7.5, 7.5, 10], "rotation": 180, "texture": "#fruit"}
+			}
+		},
+		{
+			"from": [8, 12, 4],
+			"to": [8, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 4]},
+			"faces": {
+				"east": {"uv": [9.5, 0, 12, 2.5], "texture": "#fruit"},
+				"west": {"uv": [12, 0, 9.5, 2.5], "texture": "#fruit"}
+			}
+		}
+	]
+}

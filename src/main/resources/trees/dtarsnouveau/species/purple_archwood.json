@@ -10,7 +10,15 @@
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:purple_archwood",
   "perfect_biomes": { "tag": "#forge:is_magical" },
-  "primitive_sapling": "ars_nouveau:purple_archwood_sapling",
+  "primitive_saplings": [
+    { "sapling_block": "ars_nouveau:purple_archwood_sapling"},
+    {
+      "sapling_item": "ars_nouveau:bastion_pod",
+      "can_craft_seed_to_sapling": false
+    }
+  ],
+  "seasonal_fruiting_offset": null,
+  "inherit_fruiting_offset_to_fruits": true,
   "pods": [
     "dtarsnouveau:bastion"
   ],

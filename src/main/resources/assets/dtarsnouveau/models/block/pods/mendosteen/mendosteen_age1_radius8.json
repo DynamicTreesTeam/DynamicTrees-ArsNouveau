@@ -1,0 +1,6 @@
+{
+	"parent": "dtarsnouveau:block/pods/generic/round_age1_radius8",
+	"textures": {
+		"fruit": "dtarsnouveau:block/mendosteen"
+	}
+}

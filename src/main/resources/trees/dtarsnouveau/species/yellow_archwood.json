@@ -10,7 +10,7 @@
   "max_branch_radius": 24,
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:yellow_archwood",
-  "perfect_biomes": { "type": "magical" },
+  "perfect_biomes": { "tag": "#forge:is_magical" },
   "primitive_sapling": "ars_elemental:yellow_archwood_sapling",
   "pods": [
     "dtarsnouveau:flashpine"

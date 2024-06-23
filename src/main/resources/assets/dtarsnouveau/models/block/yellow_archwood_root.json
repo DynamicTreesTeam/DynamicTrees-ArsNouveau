@@ -1,5 +1,5 @@
 {
-  "loader": "dynamictrees:root",
+  "loader": "dynamictrees:surface_root",
   "textures": {
     "bark": "ars_elemental:block/yellow_archwood_log"
   }

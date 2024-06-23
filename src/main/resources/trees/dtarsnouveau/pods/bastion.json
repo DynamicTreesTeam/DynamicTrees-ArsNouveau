@@ -1,26 +1,33 @@
 {
   "item_stack": "ars_nouveau:bastion_pod",
+  "minimum_radius": 8,
+  "maximum_radius": 16,
+  "max_age": 3,
   "block_shapes": {
     "east": [
-      { "function": "pod", "parameters": { "radius": 2, "height": 5, "stem_length": 4, "side_offset": 5, "side": "east" } },
-      { "function": "pod", "parameters": { "radius": 3, "height": 7, "stem_length": 4, "side_offset": 4, "side": "east" } },
-      { "function": "pod", "parameters": { "radius": 4, "height": 9, "stem_length": 4, "side_offset": 3, "side": "east" } }
+      [1.05, 0.7875, 0.4375, 1.1125, 0.9125, 0.5625],
+      { "function": "pod", "parameters": { "radius": 1.5, "height": 4, "stem_length": 4, "side_offset": 4.75, "side": "east", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2, "height": 6, "stem_length": 4, "side_offset": 4.25, "side": "east", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2.5, "height": 10, "stem_length": 5, "side_offset": 4.75, "side": "east", "fraction": 20 } }
     ],
     "west": [
-      { "function": "pod", "parameters": { "radius": 2, "height": 5, "stem_length": 4, "side_offset": 5, "side": "west" } },
-      { "function": "pod", "parameters": { "radius": 3, "height": 7, "stem_length": 4, "side_offset": 4, "side": "west" } },
-      { "function": "pod", "parameters": { "radius": 4, "height": 9, "stem_length": 4, "side_offset": 3, "side": "west" } }
+      [-0.1125, 0.7875, 0.4375, -0.05, 0.9125, 0.5625],
+      { "function": "pod", "parameters": { "radius": 1.5, "height": 4, "stem_length": 4, "side_offset": 4.75, "side": "west", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2, "height": 6, "stem_length": 4, "side_offset": 4.25, "side": "west", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2.5, "height": 10, "stem_length": 5, "side_offset": 4.75, "side": "west", "fraction": 20 } }
     ],
     "north": [
-      { "function": "pod", "parameters": { "radius": 2, "height": 5, "stem_length": 4, "side_offset": 5, "side": "north" } },
-      { "function": "pod", "parameters": { "radius": 3, "height": 7, "stem_length": 4, "side_offset": 4, "side": "north" } },
-      { "function": "pod", "parameters": { "radius": 4, "height": 9, "stem_length": 4, "side_offset": 3, "side": "north" } }
+      [0.4375, 0.7875, -0.1125, 0.5625, 0.9125, -0.05],
+
+      { "function": "pod", "parameters": { "radius": 1.5, "height": 4, "stem_length": 4, "side_offset": 4.75, "side": "north", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2, "height": 6, "stem_length": 4, "side_offset": 4.25, "side": "north", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2.5, "height": 10, "stem_length": 5, "side_offset": 4.75, "side": "north", "fraction": 20 } }
     ],
     "south": [
-      { "function": "pod", "parameters": { "radius": 2, "height": 5, "stem_length": 4, "side_offset": 5, "side": "south" } },
-      { "function": "pod", "parameters": { "radius": 3, "height": 7, "stem_length": 4, "side_offset": 4, "side": "south" } },
-      { "function": "pod", "parameters": { "radius": 4, "height": 9, "stem_length": 4, "side_offset": 3, "side": "south" } }
+      [0.4375, 0.7875, 1.05, 0.5625, 0.9125, 1.1125],
+      { "function": "pod", "parameters": { "radius": 1.5, "height": 4, "stem_length": 4, "side_offset": 4.75, "side": "south", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2, "height": 6, "stem_length": 4, "side_offset": 4.25, "side": "south", "fraction": 20 } },
+      { "function": "pod", "parameters": { "radius": 2.5, "height": 10, "stem_length": 5, "side_offset": 4.75, "side": "south", "fraction": 20 } }
     ]
-  },
-  "maximum_radius": 16
+  }
 }

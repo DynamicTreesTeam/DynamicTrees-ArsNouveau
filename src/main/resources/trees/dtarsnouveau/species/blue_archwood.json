@@ -9,7 +9,7 @@
   "max_branch_radius": 24,
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:blue_archwood",
-  "perfect_biomes": { "type": "magical" },
+  "perfect_biomes": { "tag": "#forge:is_magical" },
   "primitive_sapling": "ars_nouveau:blue_archwood_sapling",
   "pods": [
     "dtarsnouveau:frostaya"

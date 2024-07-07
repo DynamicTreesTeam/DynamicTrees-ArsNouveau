@@ -40,12 +40,12 @@ public class DynamicTreesArsNouveau {
     }
 
     private void gatherData(final GatherDataEvent event) {
-//        GatherDataHelper.gatherAllData(
-//                MOD_ID, event,
-//                Family.REGISTRY,
-//                Species.REGISTRY,
-//                LeavesProperties.REGISTRY,
-//                Pod.REGISTRY);
+        GatherDataHelper.gatherAllData(
+                MOD_ID, event,
+                Family.REGISTRY,
+                Species.REGISTRY,
+                LeavesProperties.REGISTRY,
+                Pod.REGISTRY);
     }
 
     public static ResourceLocation location(final String path) {

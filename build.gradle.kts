@@ -93,14 +93,15 @@ dependencies {
 
     implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
-    implementation(fg.deobf("curse.maven:ars-nouveau-401955:4712382"))
-    implementation(fg.deobf("curse.maven:ars-elemental-561470:4758196"))
-    implementation(fg.deobf("curse.maven:curios-309927:4523009"))
+    implementation(fg.deobf("curse.maven:ars-nouveau-401955:5436131"))
+    implementation(fg.deobf("curse.maven:ars-elemental-561470:5255908"))
+    runtimeOnly(fg.deobf("curse.maven:curios-309927:5367944"))
+    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:5378180"))
 
-    runtimeOnly(fg.deobf("curse.maven:jade-324717:4433884"))
-    runtimeOnly(fg.deobf("curse.maven:jei-238222:4615177"))
-    runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))
-    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.19:${property("suggestionProviderFixVersion")}"))
+    runtimeOnly(fg.deobf("curse.maven:jade-324717:5072729"))
+    runtimeOnly(fg.deobf("curse.maven:jei-238222:5101366"))
+    runtimeOnly(fg.deobf("curse.maven:cc-tweaked-282001:5118388"))
+    runtimeOnly(fg.deobf("curse.maven:suggestion-provider-fix-469647:4591193"))
     runtimeOnly(fg.deobf("vazkii.patchouli:Patchouli:${property("patchouliVersion")}"))
 }
 
@@ -155,27 +156,6 @@ curseforge {
                 optionalDependency("ars-elemental")
             }
         }
-    }
-}
-
-modrinth {
-    if (!project.hasProperty("modrinthToken")) {
-        project.logger.warn("Token for Modrinth not detected; uploading will be disabled.")
-        return@modrinth
-    }
-
-    token.set(property("modrinthToken"))
-    projectId.set("dynamic-trees-quark")
-    versionNumber.set("$mcVersion-$modVersion")
-    versionType.set(optionalProperty("versionType") ?: "release")
-    uploadFile.set(tasks.jar.get())
-    gameVersions.add(mcVersion)
-    if (changelogFile.exists()) {
-        changelog.set(changelogFile.readText())
-    }
-    dependencies {
-        required.version("vdjF5PL5", "$mcVersion-$dtVersion")
-        required.version("qnQsVE2z", "$mcVersion-3.4-405")
     }
 }
 

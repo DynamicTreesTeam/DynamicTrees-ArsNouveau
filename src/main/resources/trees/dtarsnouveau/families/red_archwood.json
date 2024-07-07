@@ -4,5 +4,8 @@
   "primitive_log": "ars_nouveau:red_archwood_log",
   "primitive_stripped_log": "ars_nouveau:stripped_red_archwood_log",
   "max_branch_radius": 24,
-  "generate_surface_root": true
+  "generate_surface_root": true,
+  "texture_overrides": {
+    "branch_top": "ars_nouveau:block/archwood_log_top"
+  }
 }

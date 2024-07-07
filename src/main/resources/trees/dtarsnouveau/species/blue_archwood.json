@@ -10,6 +10,7 @@
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:blue_archwood",
   "perfect_biomes": { "tag": "#forge:is_magical" },
+  "always_show_on_waila": true,
   "primitive_saplings": [
     { "sapling_block": "ars_nouveau:blue_archwood_sapling"},
     {

@@ -1,4 +1,7 @@
 {
   "only_if_loaded": "ars_elemental",
-  "primitive_leaves": "ars_elemental:yellow_archwood_leaves"
+  "primitive_leaves": "ars_elemental:yellow_archwood_leaves",
+  "model_overrides": {
+    "leaves": "ars_elemental:block/archwood/yellow_archwood_leaves"
+  }
 }

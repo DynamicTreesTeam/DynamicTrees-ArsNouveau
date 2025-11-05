@@ -9,7 +9,7 @@
   "max_branch_radius": 24,
   "growth_logic_kit": "dark_oak",
   "leaves_properties": "dtarsnouveau:red_archwood",
-  "perfect_biomes": { "tag": "#forge:is_magical" },
+  "perfect_biomes": { "tag": "c:biomes/is_magical" },
   "always_show_on_waila": true,
   "primitive_saplings": [
     { "sapling_block": "ars_nouveau:red_archwood_sapling"},

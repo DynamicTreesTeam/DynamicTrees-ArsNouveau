@@ -1,0 +1,56 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+issueTrackerURL="https://github.com/DynamicTreesTeam/DynamicTrees-ArsNouveau/issues"
+
+[[mods]]
+
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+
+updateJSONURL="https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/ArsNouveau.json?raw=true"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-ars-nouveau"
+
+#logoFile="examplemod.png"
+#credits=""
+
+authors="${mod_authors}"
+description='''${mod_description}'''
+
+[[dependencies."${mod_id}"]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."${mod_id}"]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."${mod_id}"]]
+    modId="dynamictrees"
+    type="required"
+    versionRange="[1.5.0-BETA08,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies."${mod_id}"]]
+    modId="dynamictreesplus"
+    versionRange="[1.3.0-BETA02,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies."${mod_id}"]]
+    modId="ars_nouveau"
+    type="required"
+    versionRange="[5.10.6,)"
+    ordering="AFTER"
+    side="BOTH"
+
+#openGLVersion="[3.2,)"

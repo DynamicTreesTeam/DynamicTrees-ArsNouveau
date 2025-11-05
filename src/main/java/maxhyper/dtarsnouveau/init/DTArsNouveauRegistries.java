@@ -1,9 +1,9 @@
 package maxhyper.dtarsnouveau.init;
 
-import net.minecraftforge.fml.common.Mod;
+// import net.neoforged.fml.common.EventBusSubscriber;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DTArsNouveauRegistries {
+// @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+// public class DTArsNouveauRegistries {
 
 //    @SubscribeEvent
 //    public static void registerPodType(final TypeRegistryEvent<Pod> event) {
@@ -15,4 +15,4 @@ public class DTArsNouveauRegistries {
 //        DTEcologicsGenFeatures.register(event.getRegistry());
 //    }
 
-}
+// }

@@ -1,36 +1,34 @@
 package maxhyper.dtarsnouveau;
 
-import com.ferreusveritas.dynamictrees.api.GatherDataHelper;
-import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.systems.pod.Pod;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.data.GatherDataHelper;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.block.pod.Pod;
+import com.dtteam.dynamictrees.registry.NeoForgeRegistryHandler;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DynamicTreesArsNouveau.MOD_ID)
 public class DynamicTreesArsNouveau {
     public static final String MOD_ID = "dtarsnouveau";
 
-    public DynamicTreesArsNouveau() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public DynamicTreesArsNouveau(IEventBus bus) {
 
-        modEventBus.addListener(this::clientSetup);
-        modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::gatherData);
+        bus.addListener(this::clientSetup);
+        bus.addListener(this::commonSetup);
+        bus.addListener(this::gatherData);
 
 //        if (ModList.get().isLoaded("dynamictreesplus")){
 //            modEventBus.register(PlusRegistries.class);
 //        }
 
-        RegistryHandler.setup(MOD_ID);
+        NeoForgeRegistryHandler.setup(MOD_ID, bus);
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
@@ -49,7 +47,7 @@ public class DynamicTreesArsNouveau {
     }
 
     public static ResourceLocation location(final String path) {
-        return new ResourceLocation(MOD_ID, path);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 
 }

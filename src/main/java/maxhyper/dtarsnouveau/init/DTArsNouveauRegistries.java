@@ -1,9 +1,9 @@
 package maxhyper.dtarsnouveau.init;
 
-// import net.neoforged.fml.common.EventBusSubscriber;
+//import net.neoforged.fml.common.EventBusSubscriber;
 
-// @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-// public class DTArsNouveauRegistries {
+//@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+//public class DTArsNouveauRegistries {
 
 //    @SubscribeEvent
 //    public static void registerPodType(final TypeRegistryEvent<Pod> event) {
@@ -14,5 +14,4 @@ package maxhyper.dtarsnouveau.init;
 //    public static void onGenFeatureRegistry (final RegistryEvent<GenFeature> event) {
 //        DTEcologicsGenFeatures.register(event.getRegistry());
 //    }
-
-// }
+//}

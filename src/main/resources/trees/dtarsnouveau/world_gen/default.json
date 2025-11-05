@@ -1,6 +1,6 @@
 [
   {
-    "select": { "tag": "#minecraft:is_forest" },
+    "select": { "tag": "#c:is_forest" },
     "apply": {
       "species" : {
         "method" : "splice_before",
@@ -46,7 +46,7 @@
 
   {
     "only_if_loaded": "ars_elemental",
-    "select": { "tag": "#minecraft:is_forest" },
+    "select": { "tag": "#c:is_forest" },
     "apply": {
       "species" : {
         "method" : "splice_before",

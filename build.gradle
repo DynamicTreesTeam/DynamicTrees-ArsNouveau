@@ -125,7 +125,7 @@ dependencies {
     runtimeOnly "curse.maven:geckolib-388172:7023453"
     runtimeOnly "curse.maven:terrablender-neoforge-940057:6054947"
     runtimeOnly "curse.maven:jei-238222:5846880"
-    runtimeOnly "curse.maven:patchouli-306770:6164617"
+    runtimeOnly "curse.maven:patchouli-306770:6842247"
 
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

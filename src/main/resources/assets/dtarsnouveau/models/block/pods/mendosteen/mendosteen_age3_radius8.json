@@ -10,9 +10,9 @@
 	},
 	"elements": [
 		{
-			"from": [5.5, 7, 1],
-			"to": [10.5, 12, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 7.4, 8.2]},
+			"from": [5.5, 6, 1],
+			"to": [10.5, 11, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 6.4, 8.2]},
 			"faces": {
 				"north": {"uv": [5, 2.5, 7.5, 5], "texture": "#fruit"},
 				"east": {"uv": [5, 2.5, 7.5, 5], "texture": "#fruit"},
@@ -32,9 +32,9 @@
 		},
 		{
 			"name": "leaf1",
-			"from": [3.5, 12, 1],
-			"to": [8.5, 12, 6],
-			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.5, 12, 3.5]},
+			"from": [3.5, 11, 1],
+			"to": [8.5, 11, 6],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.5, 11, 3.5]},
 			"faces": {
 				"up": {"uv": [16, 0, 13.5, 2.5], "rotation": 90, "texture": "#fruit"},
 				"down": {"uv": [13.5, 0, 16, 2.5], "rotation": 90, "texture": "#fruit"}
@@ -42,9 +42,9 @@
 		},
 		{
 			"name": "leaf2",
-			"from": [7.5, 12, 1],
-			"to": [12.5, 12, 6],
-			"rotation": {"angle": -22.5, "axis": "z", "origin": [10.5, 12, 3.5]},
+			"from": [7.5, 11, 1],
+			"to": [12.5, 11, 6],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [10.5, 11, 3.5]},
 			"faces": {
 				"up": {"uv": [13.5, 0, 16, 2.5], "rotation": 270, "texture": "#fruit"},
 				"down": {"uv": [16, 0, 13.5, 2.5], "rotation": 270, "texture": "#fruit"}
@@ -52,9 +52,9 @@
 		},
 		{
 			"name": "leaf3",
-			"from": [5.5, 12, 3],
-			"to": [10.5, 12, 8],
-			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 12, 6]},
+			"from": [5.5, 11, 3],
+			"to": [10.5, 11, 8],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 11, 6]},
 			"faces": {
 				"up": {"uv": [13.5, 0, 16, 2.5], "texture": "#fruit"},
 				"down": {"uv": [16, 0, 13.5, 2.5], "rotation": 180, "texture": "#fruit"}
@@ -62,9 +62,9 @@
 		},
 		{
 			"name": "leaf3",
-			"from": [5.5, 12, -1],
-			"to": [10.5, 12, 4],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 12, 1]},
+			"from": [5.5, 11, -1],
+			"to": [10.5, 11, 4],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 11, 1]},
 			"faces": {
 				"up": {"uv": [16, 0, 13.5, 2.5], "rotation": 180, "texture": "#fruit"},
 				"down": {"uv": [13.5, 0, 16, 2.5], "texture": "#fruit"}

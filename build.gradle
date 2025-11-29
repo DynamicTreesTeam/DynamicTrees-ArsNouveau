@@ -105,17 +105,11 @@ configurations {
 }
 
 dependencies {
-    // Specify the version of Minecraft to use.
-    // Depending on the plugin applied there are several options. We will assume you applied the userdev plugin as shown above.
-    // The group for userdev is net.neoforged, the module name is neoforge, and the version is the same as the neoforge version.
-    // You can however also use the vanilla plugin (net.neoforged.gradle.vanilla) to use a version of Minecraft without the neoforge loader.
-    // And its provides the option to then use net.minecraft as the group, and one of; client, server or joined as the module name, plus the game version as version.
-    // For all intends and purposes: You can treat this dependency as if it is a normal library you would use.
     implementation "net.neoforged:neoforge:${neo_version}"
 
     //implementation ':dynamictrees:neoforge-1.21.1-1.5.0-BETA08'
-    implementation 'curse.maven:dynamictrees-252818:7169028'
-    implementation 'curse.maven:dynamictreesplus-478155:6593943'
+    implementation 'curse.maven:dynamictrees-252818:7272645'
+    implementation 'curse.maven:dynamictreesplus-478155:7272755'
     implementation 'curse.maven:jade-324717:6291517'
 
     implementation 'curse.maven:ars-nouveau-401955:7100043'

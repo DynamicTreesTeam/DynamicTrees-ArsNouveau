@@ -1,6 +1,8 @@
 {
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout_mipped",
 	"texture_size": [32, 32],
 	"textures": {
 		"particle": "dtarsnouveau:block/bombegranate",
@@ -8,9 +10,9 @@
 	},
 	"elements": [
 		{
-			"from": [5.6, 8, 2],
-			"to": [10.4, 12, 6.8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.4, 9.2]},
+			"from": [5, 6, 2],
+			"to": [11, 11, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.8, 5.4, 9.2]},
 			"faces": {
 				"north": {"uv": [5, 3.5, 8, 6], "texture": "#fruit"},
 				"east": {"uv": [5, 3.5, 8, 6], "texture": "#fruit"},
@@ -21,8 +23,8 @@
 			}
 		},
 		{
-			"from": [8, 12, 2],
-			"to": [8, 16, 6],
+			"from": [8, 11, 2],
+			"to": [8, 16, 7],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 2]},
 			"faces": {
 				"east": {"uv": [9.5, 0, 12, 2.5], "texture": "#fruit"},
@@ -30,18 +32,18 @@
 			}
 		},
 		{
-			"from": [8, 4.8, 2],
-			"to": [8, 8, 6.8],
-			"rotation": {"angle": -45, "axis": "y", "origin": [8, 3.2, 4.4]},
+			"from": [8, 2, 2],
+			"to": [8, 6, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 1.2, 5]},
 			"faces": {
 				"east": {"uv": [13, 0, 16, 2], "texture": "#fruit"},
 				"west": {"uv": [16, 0, 13, 2], "texture": "#fruit"}
 			}
 		},
 		{
-			"from": [5.6, 4.8, 4.4],
-			"to": [10.4, 8, 4.4],
-			"rotation": {"angle": -45, "axis": "y", "origin": [8, 3.2, 4.4]},
+			"from": [5, 2, 5],
+			"to": [11, 6, 5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 1.2, 5]},
 			"faces": {
 				"north": {"uv": [13, 0, 16, 2], "texture": "#fruit"},
 				"south": {"uv": [16, 0, 13, 2], "texture": "#fruit"}

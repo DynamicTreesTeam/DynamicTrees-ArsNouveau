@@ -1,6 +1,8 @@
 {
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout_mipped",
 	"texture_size": [32, 32],
 	"textures": {
 		"particle": "dtarsnouveau:block/frostaya",
@@ -8,9 +10,9 @@
 	},
 	"elements": [
 		{
-			"from": [6, 4, 3.8],
-			"to": [10, 12, 7.8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.4, 11]},
+			"from": [5.5, 1, 4],
+			"to": [10.5, 11, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4.4, 11.2]},
 			"faces": {
 				"north": {"uv": [5, 2.5, 7.5, 7.5], "texture": "#fruit"},
 				"east": {"uv": [5, 2.5, 7.5, 7.5], "texture": "#fruit"},
@@ -21,8 +23,8 @@
 			}
 		},
 		{
-			"from": [8, 12, 3],
-			"to": [8, 16, 7],
+			"from": [8, 11, 3],
+			"to": [8, 16, 8],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 3]},
 			"faces": {
 				"east": {"uv": [9.5, 0, 12, 2.5], "texture": "#fruit"},
@@ -30,18 +32,18 @@
 			}
 		},
 		{
-			"from": [4.4, 6.4, 5.8],
-			"to": [11.6, 15.2, 5.8],
-			"rotation": {"angle": -45, "axis": "y", "origin": [8, 9.6, 5.8]},
+			"from": [3.5, 4, 6.5],
+			"to": [12.5, 15, 6.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8.4, 6.5]},
 			"faces": {
 				"north": {"uv": [0, 10.5, 4.5, 16], "texture": "#fruit"},
 				"south": {"uv": [0, 10.5, 4.5, 16], "texture": "#fruit"}
 			}
 		},
 		{
-			"from": [8, 6.4, 2.2],
-			"to": [8, 15.2, 9.4],
-			"rotation": {"angle": -45, "axis": "y", "origin": [8, 9.6, 5.8]},
+			"from": [8, 4, 2],
+			"to": [8, 15, 11],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8.4, 6.5]},
 			"faces": {
 				"east": {"uv": [0, 10.5, 4.5, 16], "texture": "#fruit"},
 				"west": {"uv": [0, 10.5, 4.5, 16], "texture": "#fruit"}
